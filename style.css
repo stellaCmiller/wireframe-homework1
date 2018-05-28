@@ -30,10 +30,11 @@ h1, h2, h3 {
 
 section {
     background-color: #ebebeb;
+    display: inline-block;
     color: #777777;
-    width: 490px;
     padding: 5px 0px 5px 5px;
     margin: 10px 10px 10px 0px;
+    width: 490px;
     text-align: center;
     
 }
@@ -51,10 +52,14 @@ article {
     margin: 5px;
 }
 
+/*I could NOT figure out how to get the columns the same height without hard coding it :(*/
 aside {
+    float: right;
+    width: 450px;
+    height: 283px;
     background-color: #ebebeb;
     color: #777777;
     margin: 10px 0px 10px 5px;
     text-align: center;
-    width: 450px;
+ 
 }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +8,9 @@
     <title>Wireframe Template</title>
     <link rel="stylesheet" type="text/css" media="screen" href="style.css">
 </head>
+
 <body>
-<!--Each of the semantic elements like 'header', 'section' and 'article' etc. can be replaced with simple div elements; these tags assist in SEO-->
+    <!--Each of the semantic elements like 'header', 'section' and 'article' etc. can be replaced with simple div elements; these tags assist in SEO-->
     <header class="full-block">
         <p>header</p>
     </header>
@@ -17,34 +19,35 @@
         <p>nav</p>
     </nav>
 
-    <!--The method that I used to create the two columns of unequal width is by using a flex container; I could not figure out how to get inline floating elements the same height-->
-    <div style="display: flex">    
-        <section>
-            <p>section</p>      
-            <article>
-                <p style="color: #ebebeb">article</p>
-                
-                <div class="sub">
-                    <h1>h1, </h1>
-                    <h2>h2, </h2>
-                    <h3>h3</h3>
-                </div>
 
-                <div class="sub">
-                    <p>p</p>
-                </div>                
-            </article>  
-        </section>
+    <section>            
+        <p>section</p>
+        <article>
+            <p style="color: #ebebeb">article</p>
 
-        <aside>
-            <p>aside</p>
+            <div class="sub">
+                <h1>h1, </h1>
+                <h2>h2, </h2>
+                <h3>h3</h3>
+            </div>
 
-        </aside>
-    </div>
+            <div class="sub">
+                <p>p</p>
+            </div>
+        </article>
+    </section>
     
-    <footer class="full-block">
+    <aside>
+        
+        <p>aside</p>
+
+    </aside>
+
+
+    <footer class="full-block" style="clear: right">
         <p>footer</p>
     </footer>
 
 </body>
+
 </html>
