@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="style.css">
 </head>
 <body>
+<!--Each of the semantic elements like 'header', 'section' and 'article' etc. can be replaced with simple div elements; these tags assist in SEO-->
     <header class="full-block">
         <p>header</p>
     </header>
@@ -16,21 +17,34 @@
         <p>nav</p>
     </nav>
 
-    <section>
-        <p>section</p>
-        <article>
-            <div>
-                <p><strong>h1, h2, h3</strong></p>
-            </div>
-            <div>
-                <p>p</p>
-            </div>
-        </article>
-    </section>
+    <!--The method that I used to create the two columns of unequal width is by using a flex container; I could not figure out how to get inline floating elements the same height-->
+    <div style="display: flex">    
+        <section>
+            <p>section</p>      
+            <article>
+                <p style="color: #ebebeb">article</p>
+                
+                <div class="sub">
+                    <h1>h1, </h1>
+                    <h2>h2, </h2>
+                    <h3>h3</h3>
+                </div>
 
-    <aside>
-        <p>aside</p>
+                <div class="sub">
+                    <p>p</p>
+                </div>                
+            </article>  
+        </section>
 
-    </aside>
+        <aside>
+            <p>aside</p>
+
+        </aside>
+    </div>
+    
+    <footer class="full-block">
+        <p>footer</p>
+    </footer>
+
 </body>
 </html>
